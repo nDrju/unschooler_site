@@ -68,10 +68,15 @@ color: var(--dark)
      width: 53.8rem;
      display: flex;
      justify-content: space-between;
+     align-content: center;
      font-family: 'Graphik', sans-serif;
      font-style: normal;
      font-weight: 500;
      font-size: 2rem;
+     list-style: url('./assets/icons/Union.svg');
+ }
+ .navbar ul li {
+     height: 3rem;
  }
  .navbar p {
     font-family: 'Graphik', sans-serif;
@@ -79,6 +84,22 @@ color: var(--dark)
     font-weight: 500;
     font-size: 2rem;
  }
+ .navbar ul li:nth-child(1):hover {
+     background: url('./assets/icons/Polygon1.svg') no-repeat;
+     background-size: contain;
+ }
+ .navbar ul li:nth-child(2):hover {
+    background: url('./assets/icons/Rectangle-1.svg') no-repeat;
+    background-size: contain;
+}
+.navbar ul li:nth-child(3):hover {
+    background: url('./assets/icons/Ellipse6.svg') no-repeat;
+    background-size: contain;
+}
+.navbar ul li:nth-child(4):hover {
+    background: url('./assets/icons/Rectangle.svg') no-repeat;
+    background-size: contain;
+}
  .main {
      border-left: var(--black) solid 3px;
  }
@@ -140,7 +161,7 @@ button:hover {
     position: relative;
     width: 100%;
     padding-top: 5vw;
-    height: 110vw;
+    height: 120vw;
     
 }
 .scheme-block-wrapper p {
@@ -152,6 +173,54 @@ button:hover {
     width: 22vw;
     line-height: 100%;
     color: var(--dark);
+}
+.scheme-gray-text p {
+    position: absolute;
+    font-family: 'Graphik';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.2vw;
+    line-height: 1.4vw;
+    color: var(--grey);
+    width: 10vw;
+}
+.scheme-gray-text p:nth-child(1) {
+    top: 18vw;
+    left: 7%;
+}
+.scheme-gray-text p:nth-child(2) {
+    top: 16vw;
+    left: 81%;
+    width: 9vw;
+}
+.scheme-gray-text p:nth-child(3) {
+    top: 36vw;
+    left: 68%;
+    width: 11vw;
+}
+.scheme-gray-text p:nth-child(4) {
+    top: 56vw;
+    left: 84%;
+    width: 10vw;
+}
+.scheme-gray-text p:nth-child(5) {
+    top: 69vw;
+    left: 24%;
+    width: 10vw;
+}
+.scheme-gray-text p:nth-child(6) {
+    top: 80vw;
+    left: 6%;
+    width: 12vw;
+}
+.scheme-gray-text p:nth-child(7) {
+    top: 89vw;
+    left: 67%;
+    width: 12vw;
+}
+.scheme-gray-text p:nth-child(7) a {
+color: var(--dark);
+text-decoration: underline;
 }
 
 .scheme-block-wrapper button {
@@ -208,8 +277,14 @@ button:hover {
 }
 .lets-go {
     position: relative;
-    top: 0vw;
+    top: -66vw;
     left: calc(50% - 145px);
+}
+.new-profession {
+    width: 53vw;
+    position: relative;
+    top: 3vw;
+    left: calc(42% - 50vw);
 }
 
  .bottom-grid {
